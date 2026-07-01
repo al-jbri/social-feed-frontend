@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="../src/style.css" />
+    <script type="module" src="../src/js/login.js" defer></script>
+    <title>SocialFeed | Login</title>
+  </head>
+  <body
+    class="flex justify-center items-center h-dvh bg-neutral-950 text-neutral-100"
+  >
+    <form
+      id="login-form"
+      class="flex flex-col gap-3 p-5 bg-neutral-950 md:bg-neutral-900 md:rounded-2xl md:w-md md:h-auto h-dvh w-full"
+    >
+      <h1 class="text-xl font-bold">LogIn to SocialFeed</h1>
+
+      <label for="email-input">Email:</label>
+      <input
+        type="email"
+        required
+        class="border-2 border-neutral-900 outline-0 focus:border-emerald-600 hover:bg-neutral-700 bg-neutral-800 rounded-2xl p-1.5 transition"
+        placeholder="name@domain.com"
+        id="email-input"
+      />
+
+      <label for="password-input">Password:</label>
+      <input
+        type="password"
+        required
+        class="border-2 border-neutral-900 outline-0 focus:border-emerald-600 hover:bg-neutral-700 bg-neutral-800 rounded-2xl p-1.5 transition"
+        placeholder="••••••••"
+        id="password-input"
+      />
+
+      <div class="flex gap-1 justify-center">
+        <span>don't have an account?</span>
+        <a
+          href="../register/index.html"
+          class="text-blue-500 hover:text-blue-400 underline"
+          >create new account</a
+        >
+      </div>
+
+      <button
+        type="submit"
+        class="p-3 bg-emerald-600 hover:bg-emerald-700 transition rounded-2xl font-semibold cursor-pointer"
+      >
+        LogIn
+      </button>
+    </form>
+  </body>
+</html>
