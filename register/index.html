@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="../src/style.css" />
+    <script type="module" src="../src/js/register.js" defer></script>
+    <title>SocialFeed | Register</title>
+  </head>
+  <body
+    class="flex justify-center items-center h-dvh bg-neutral-950 text-neutral-100 overflow-hidden"
+  >
+    <form
+      id="register-form"
+      class="flex flex-col gap-3 p-5 bg-neutral-950 md:bg-neutral-900 md:rounded-2xl md:w-md md:h-auto h-dvh w-full overflow-y-auto"
+    >
+      <h1 class="text-xl font-bold">Create Account on SocialFeed</h1>
+
+      <label for="display-name-input">Display Name:</label>
+      <input
+        type="text"
+        required
+        class="border-2 border-neutral-900 outline-0 focus:border-emerald-600 hover:bg-neutral-700 bg-neutral-800 rounded-2xl p-1.5 transition"
+        placeholder="e.g. John Doe"
+        id="display-name-input"
+      />
+
+      <label for="user-name-input">Username:</label>
+      <input
+        type="text"
+        required
+        class="border-2 border-neutral-900 outline-0 focus:border-emerald-600 hover:bg-neutral-700 bg-neutral-800 rounded-2xl p-1.5 transition"
+        placeholder="username_123"
+        id="user-name-input"
+      />
+
+      <label for="email-input">Email:</label>
+      <input
+        type="email"
+        required
+        class="border-2 border-neutral-900 outline-0 focus:border-emerald-600 hover:bg-neutral-700 bg-neutral-800 rounded-2xl p-1.5 transition"
+        placeholder="name@domain.com"
+        id="email-input"
+      />
+
+      <label for="password-input">Password:</label>
+      <input
+        type="password"
+        required
+        class="border-2 border-neutral-900 outline-0 focus:border-emerald-600 hover:bg-neutral-700 bg-neutral-800 rounded-2xl p-1.5 transition"
+        placeholder="••••••••"
+        id="password-input"
+      />
+
+      <div class="flex gap-1 justify-center mt-1">
+        <span>already have an account?</span>
+        <a
+          href="../login/index.html"
+          class="text-blue-500 hover:text-blue-400 underline"
+          >LogIn here</a
+        >
+      </div>
+
+      <button
+        type="submit"
+        class="p-3 bg-emerald-600 hover:bg-emerald-700 transition rounded-2xl font-semibold cursor-pointer mt-1"
+      >
+        Register
+      </button>
+    </form>
+  </body>
+</html>
